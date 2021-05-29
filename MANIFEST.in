@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include masar_collection *.css
+recursive-include masar_collection *.csv
+recursive-include masar_collection *.html
+recursive-include masar_collection *.ico
+recursive-include masar_collection *.js
+recursive-include masar_collection *.json
+recursive-include masar_collection *.md
+recursive-include masar_collection *.png
+recursive-include masar_collection *.py
+recursive-include masar_collection *.svg
+recursive-include masar_collection *.txt
+recursive-exclude masar_collection *.pyc
