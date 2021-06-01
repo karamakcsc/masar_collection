@@ -1,0 +1,156 @@
+{
+ "actions": [],
+ "autoname": "field:code",
+ "creation": "2021-05-30 23:23:58.936270",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "main_information_section",
+  "code",
+  "file_number",
+  "claim_type",
+  "desc",
+  "claim_date",
+  "claim_status",
+  "column_break_8",
+  "represents_company",
+  "customer",
+  "supervisor_employee",
+  "collector_employee",
+  "liaison_officer_employee",
+  "product_number",
+  "loan_type",
+  "debtor_details_section",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "main_information_section",
+   "fieldtype": "Section Break",
+   "label": "Main Information"
+  },
+  {
+   "fieldname": "code",
+   "fieldtype": "Data",
+   "label": "Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "desc",
+   "fieldtype": "Data",
+   "label": "Subject"
+  },
+  {
+   "fieldname": "claim_date",
+   "fieldtype": "Date",
+   "label": "Claim Date"
+  },
+  {
+   "fieldname": "claim_status",
+   "fieldtype": "Select",
+   "label": "Claim Status",
+   "options": "New\nOpen\nDone"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Debtor",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "file_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "File Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Financial Claims",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "default": "Real estates",
+   "fieldname": "claim_type",
+   "fieldtype": "Select",
+   "label": "Claim Type",
+   "options": "Real estates\nCar",
+   "reqd": 1
+  },
+  {
+   "fieldname": "liaison_officer_employee",
+   "fieldtype": "Link",
+   "label": "Liaison Officer",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "supervisor_employee",
+   "fieldtype": "Link",
+   "label": " Supervisor",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "collector_employee",
+   "fieldtype": "Link",
+   "label": " Collector",
+   "options": "Employee"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "debtor_details_section",
+   "fieldtype": "Section Break",
+   "label": "Debtor Details"
+  },
+  {
+   "fieldname": "represents_company",
+   "fieldtype": "Link",
+   "label": "Client",
+   "options": "Company"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "product_number",
+   "fieldtype": "Data",
+   "label": "Product Number"
+  },
+  {
+   "fieldname": "loan_type",
+   "fieldtype": "Data",
+   "label": "Loan Type"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-06-02 00:41:36.506835",
+ "modified_by": "Administrator",
+ "module": "Masar Collection",
+ "name": "Financial Claims",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
